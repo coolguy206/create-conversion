@@ -6,14 +6,16 @@
 //   var sentence.charAt(0).toUpperCase();
 // alert(sentence);
 
-var sentence = function (firstLetter)
-{
-    return firstLetter.charAt(-1).toUpperCase() + firstLetter.slice(0);
+var sentence = function (question) {
+  var firstLetter = question.charAt(0).toUpperCase();
+  var lastLetter = question.substr(question.length -1).toUpperCase();
+  console.log(lastLetter);
+    return firstLetter + lastLetter;
 };
 
-var firstLetter = prompt("Enter a sentence");
-var result = sentence(firstLetter);
-alert(result);
+var question = prompt("Enter a sentence");
+var result = sentence(question);
+console.log(sentence);
 
 
 // var gallonToLiters = function (gallon) {
