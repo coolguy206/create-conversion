@@ -15,7 +15,7 @@ var sentence = function (question) {
 
 var question = prompt("Enter a sentence");
 var result = sentence(question);
-console.log(sentence);
+console.log(result);
 
 
 // var gallonToLiters = function (gallon) {
